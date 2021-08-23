@@ -1,5 +1,7 @@
 # formless
 
+(work with nextjs)
+
 Add to App
 ``` tsx
 const MyApp = ({ Component, pageProps }: AppProps) => {
