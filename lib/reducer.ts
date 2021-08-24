@@ -1,6 +1,6 @@
 import { session, action, themes, types } from "./types";
 
-const sessionReducer = (session: session, action: action) => {
+export const sessionReducer = (session: session, action: action) => {
   switch (action.type) {
     case types.initState: {
       return {
@@ -35,5 +35,3 @@ const sessionReducer = (session: session, action: action) => {
     }
   }
 };
-
-export default sessionReducer;
