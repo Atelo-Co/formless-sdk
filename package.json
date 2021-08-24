@@ -1,6 +1,6 @@
 {
   "name": "@atelo-co/formless",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/damienmillet/formless.git"
+    "url": "git+https://github.com/atelo-co/formless.git"
   },
   "author": "damienmillet",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/damienmillet/formless/issues"
+    "url": "https://github.com/atelo-co/formless/issues"
   },
-  "homepage": "https://github.com/damienmillet/formless#readme",
+  "homepage": "https://github.com/atelo-co/formless#readme",
   "dependencies": {
     "@types/node": "^15.0.0",
     "@types/react-dom": "^17.0.9",
