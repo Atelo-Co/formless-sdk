@@ -9,6 +9,10 @@ import type {
 import { themes } from "./types";
 import sessionReducer from "./reducer";
 import useSWR from "swr";
+export * from "./actions";
+export * from "./reducer";
+export * from "./utils/cookies";
+export * from "./utils/encoder";
 
 type sessionStateContext = React.Context<sessionContext | undefined>;
 /**
