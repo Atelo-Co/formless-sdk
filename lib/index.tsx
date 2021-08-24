@@ -62,7 +62,7 @@ const SessionProvider = ({ children }: sessionProviderProps) => {
  * @param redirectTo
  * @returns context
  */
-const useSession = ({ redirectTo, redirectIfConnected }: usesession) => {
+const useSession = ({ redirectTo, redirectIfConnected }: usesession = {}) => {
   const context = React.useContext(SessionStateContext);
   redirectIfConnected &&
     context?.session.user &&
