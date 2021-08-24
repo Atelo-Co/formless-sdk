@@ -41,6 +41,11 @@ export type action = {
   payload?: payload;
 };
 
+export type usesession = {
+  redirectTo?: string;
+  redirectIfConnected?: string;
+};
+
 export type dispatch = (action: action) => void;
 export type sessionContext = { session: session; dispatch: dispatch };
 export type sessionProviderProps = { children: React.ReactNode };

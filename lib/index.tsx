@@ -1,6 +1,11 @@
 import React from "react";
 import Router from "next/router";
-import type { sessionProviderProps, sessionContext, session } from "./types";
+import type {
+  sessionProviderProps,
+  sessionContext,
+  session,
+  usesession,
+} from "./types";
 import { themes } from "./types";
 import sessionReducer from "./reducer";
 import useSWR from "swr";
@@ -53,8 +58,11 @@ const SessionProvider = ({ children }: sessionProviderProps) => {
  * @param redirectTo
  * @returns context
  */
-const useSession = (redirectTo?: string) => {
+const useSession = ({ redirectTo, redirectIfConnected }: usesession) => {
   const context = React.useContext(SessionStateContext);
+  redirectIfConnected &&
+    context?.session.user &&
+    Router.push(redirectIfConnected);
   React.useEffect(() => {
     if (redirectTo && !context?.session.user) {
       Router.push(redirectTo);
