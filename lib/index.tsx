@@ -9,6 +9,9 @@ import type {
 import { themes } from "./types";
 import { sessionReducer } from "./reducer";
 import useSWR from "swr";
+import { signin, signout, toggleTheme } from "./actions";
+import { setCookie } from "./utils/cookies";
+import { encode, decode } from "./utils/encoder";
 
 type sessionStateContext = React.Context<sessionContext | undefined>;
 /**
@@ -74,4 +77,13 @@ const useSession = ({ redirectTo, redirectIfConnected }: usesession = {}) => {
   return context;
 };
 
-export { SessionProvider, useSession };
+export {
+  SessionProvider,
+  useSession,
+  signin,
+  signout,
+  toggleTheme,
+  setCookie,
+  encode,
+  decode,
+};
