@@ -20,6 +20,7 @@ export const sessionReducer = (session: session, action: action) => {
       };
     }
     case types.signin: {
+      fetch("/api/auth/signout");
       return {
         ...session,
         ...{
