@@ -1,6 +1,6 @@
 {
   "name": "@atelo-co/formless",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "(work with nextjs)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
